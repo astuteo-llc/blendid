@@ -93,6 +93,7 @@ module.exports = function (env) {
     webpackConfig.optimization.minimizer.push(new UglifyJsPlugin(uglifyConfig))
     webpackConfig.plugins.push(
       new webpack.DefinePlugin(TASK_CONFIG.javascripts.production.definePlugin),
+      new webpack.optimize.UglifyJsPlugin(uglifyConfig),
       new webpack.NoEmitOnErrorsPlugin()
     )
   }
