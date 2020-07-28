@@ -2,11 +2,6 @@
   "src": "./src",
   "dest": "./public",
 
-  "html": {
-    "src": "html",
-    "dest": "./"
-  },
-
   "static": {
     "src": "static",
     "dest": "./"
